@@ -34,3 +34,9 @@ and check correctness
 
 and update db
 > python manage.py migrate
+
+To manipulate model and save changes in db
+> python manage.py shell
+
+Create admin for project (grzesk grzesiek)
+> python manage.py createsuperuser
