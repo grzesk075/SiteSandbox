@@ -18,3 +18,19 @@ Create web application named polls in SiteSandbox project.
 > python manage.py startapp polls
 
 After implementation the web app page is http://localhost:8000/polls/ .
+
+To initialize database defined in settings.py with tables for INSTALLED_APPS.
+> python manage.py migrate
+
+To update database for polls app after schema change
+create migration files
+> python manage.py makemigrations polls
+
+and create sql statements
+> python manage.py sqlmigrate polls 0001
+
+and check correctness
+> python manage.py check
+
+and update db
+> python manage.py migrate
